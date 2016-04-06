@@ -1,0 +1,35 @@
+{
+  "name": "dcs/role-provider-array-bundle",
+  "type": "symfony-bundle",
+  "description": "The DCSRoleProviderArrayBundle provides the management of the roles with an array configuration",
+  "keywords": ["User","Role","Symfony","RoleProvider","Array"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Damiano Ciarla",
+      "email": "damiano.ciarla@gmail.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5",
+    "dcs/role-core-bundle": "~1.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "DCS\\Role\\Provider\\ArrayBundle\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DCS\\Role\\Provider\\ArrayBundle\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
