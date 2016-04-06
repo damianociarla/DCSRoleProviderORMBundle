@@ -15,7 +15,7 @@ class DCSRoleProviderORMExtension extends Extension
 
         $container->setParameter('dcs_role.provider.orm.model_class', $config['model_class']);
 
-        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('manager.xml');
         $loader->load('provider.xml');
         $loader->load('repository.xml');
