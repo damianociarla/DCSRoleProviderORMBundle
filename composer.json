@@ -1,8 +1,8 @@
 {
-  "name": "dcs/role-provider-array-bundle",
+  "name": "dcs/role-provider-orm-bundle",
   "type": "symfony-bundle",
-  "description": "The DCSRoleProviderArrayBundle provides the management of the roles with an array configuration",
-  "keywords": ["User","Role","Symfony","RoleProvider","Array"],
+  "description": "The DCSRoleProviderORMBundle provides the management of user roles using Doctrine ORM",
+  "keywords": ["User","Role","Symfony","RoleProvider","ORM","Doctrine"],
   "license": "MIT",
   "authors": [
     {
@@ -11,20 +11,22 @@
     }
   ],
   "require": {
-    "php": ">=5.3.9"
+    "php": ">=5.3.9",
+    "doctrine/orm": "^2.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^5",
-    "dcs/role-core-bundle": "~1.0@dev"
+    "dcs/role-core-bundle": "~1.0@dev",
+    "dcs/user-core-bundle": "~1.0@dev"
   },
   "autoload": {
     "psr-4": {
-      "DCS\\Role\\Provider\\ArrayBundle\\": "src"
+      "DCS\\Role\\Provider\\ORMBundle\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "DCS\\Role\\Provider\\ArrayBundle\\Tests\\": "tests"
+      "DCS\\Role\\Provider\\ORMBundle\\Tests\\": "tests"
     }
   },
   "extra": {
