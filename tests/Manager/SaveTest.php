@@ -15,8 +15,8 @@ class SaveTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->role = $this->getMock('DCS\Role\Provider\ORMBundle\Model\RoleInterface');
-        $this->entityManager = $this->getMock('Doctrine\ORM\EntityManagerInterface');
+        $this->role = $this->createMock('DCS\Role\Provider\ORMBundle\Model\RoleInterface');
+        $this->entityManager = $this->createMock('Doctrine\ORM\EntityManagerInterface');
         $this->save = new Save($this->entityManager);
     }
 
