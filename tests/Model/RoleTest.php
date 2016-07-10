@@ -3,8 +3,8 @@
 namespace DCS\Role\Provider\ORMBundle\Tests\Model;
 
 use DCS\Role\Provider\ORMBundle\Model\RoleInterface as DCSRoleInterface;
-use Symfony\Component\Security\Core\Role\RoleInterface as SfRoleInterface;
 use DCS\Role\Provider\ORMBundle\Tests\RoleTest as Role;
+use Symfony\Component\Security\Core\Role\RoleInterface as SfRoleInterface;
 
 class RoleTest extends \PHPUnit_Framework_TestCase
 {
