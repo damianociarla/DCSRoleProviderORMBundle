@@ -3,7 +3,6 @@
 namespace DCS\Role\Provider\ORMBundle;
 
 use DCS\Role\CoreBundle\Provider\ProviderInterface;
-use DCS\Role\Provider\ORMBundle\Manager\GetRepository;
 use DCS\Role\Provider\ORMBundle\Manager\Save;
 use DCS\Role\Provider\ORMBundle\Service\RoleFactoryInterface;
 use Doctrine\ORM\EntityRepository;
