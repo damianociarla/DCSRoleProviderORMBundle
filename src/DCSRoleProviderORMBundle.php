@@ -15,16 +15,6 @@ class DCSRoleProviderORMBundle extends Bundle
     {
         parent::build($container);
 
-        if (!class_exists('Doctrine\ORM\Version')) {
-            return;
-        }
-
-        $ormCompilerClass = 'Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\DoctrineOrmMappingsPass';
-
-        if (!class_exists($ormCompilerClass)) {
-            return;
-        }
-
         $container->addCompilerPass(
             DoctrineOrmMappingsPass::createXmlMappingDriver([
                 realpath(__DIR__ . '/Resources/config/doctrine-core') => 'DCS\Role\Provider\ORMBundle\Model',
